@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>To Do List</title>
+    <style type="text/css">
+        *{
+            border-radius: 10px;
+
+        }
+        table{
+            display: inline-flexbox;
+            background-color: #00ff0099;
+            padding-top: 10px 15px;
+        }
+        .list{
+            background-color: #777fff;
+            padding: 10px 10px;
+
+
+        }
+        .del-btn,.edit-btn{
+            margin:  10px 0px;
+            display: inline-block;
+        }
+        #listText{
+            margin: 30px;
+            padding: 10px;
+            border: 2px solid;
+        }
+        .btn-add{
+            margin: 15px 15px;
+        }
+        .input{
+            margin: 10px 15px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <table style="width:50% height: 80%;" align="center">
+        <tr>
+            <th>To Do List   <i class="fas fa-list-ul"></i></th>
+        <tbody>
+            <td>
+                <div class="todo" align="center">
+                <div class="add-box" id="addBox">   
+                    <input type="text" id="input" width="10px" placeholder="Say Something">
+                    <button id="addBtn" class="btn btn-add" onclick="addList()">+</button>
+                </div>
+            </td>
+        </tbody>
+    </tr>
+        <tr>
+            <td>
+                <ul class="list" id="list"></ul>
+            </td>
+        </tr>
+    </div>
+    </table>
+    <script>
+        let minTextLength = 3;
+        let i=1;
+        let input = document.getElementById("input");
+        let list = document.getElementById("list");
+        function textFilter(x){
+            if(x){
+               if(x.length>= minTextLength){
+                    return x;
+               }else{
+                    alert("Min Text Length is 3");
+                    return false;
+               };
+            }else{
+                alert("Input Text Empty");
+            }
+        }
+        function showList(text){
+            list.innerHTML += `<ol class="list-item" id="list${i}">
+                <span id="listText${i}">${text}</span>
+                <button class="btn del-btn" onclick="deleteList(${i})"><i class="fas fa-trash"></i></button>
+                <button class="btn edit-btn" onclick="editList(${i})"><i class="fas fa-edit"></i></button>
+            </ol>`;
+            i++;
+        }
+        function deleteList(listId){
+            let current = document.getElementById(`list${listId}`);
+            let currentText = document.getElementById(`listText${listId}`).innerHTML;
+            let deleteConfirm=confirm(`Are u sure to Delete List'${currentText}'`);
+            if(deleteConfirm){
+            list.removeChild(current);
+            }else{
+                console.log("Delete cancel?");
+            }
+        }
+        function editList(listId){
+            let current = document.getElementById(`listText${listId}`);
+            let newText= prompt("Say something",current.innerHTML);
+            if(textFilter(newText)){
+                current.innerHTML = newText;
+            }
+        }
+        function addList(){
+            //get
+            let inputText=textFilter(input.value);
+            //set
+            if(inputText){
+            showList(inputText);
+            input.value="";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Design</title>
+    <style type="text/css">
+        .table{
+            width: 90%;
+            border-collapse: collapse;
+            border: 1px solid #e3e3e3; 
+        }
+        .table thead{
+            background-color:#eeeeee;
+
+        }
+        .table th{
+            text-align: left;
+        }
+        .table tr, .table td, .table th{
+            /* border: 1px solid #e3e3e3; */
+            padding:10px 15px ;
+        }
+        .table tr:nth-child(even){
+            background-color: #eee;
+        }
+        .table tr:hover{
+            background-color: #bbb;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Age</th>
+                <th>Start Date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>U Hla</td>
+                <td>System Architect</td>
+                <td>Edinburgh</td>
+                <td>50</td>
+                <td>2011/4/25</td>
+                <td>320,800</td>
+            </tr>
+            <tr>
+                <td>Mg Mg</td>
+                <td>Accountant</td>
+                <td>Yangon</td>
+                <td>45</td>
+                <td>2011/5/12</td>
+                <td>520,800</td>
+            </tr>
+            <tr>
+                <td>Su Su</td>
+                <td>Web Designer</td>
+                <td>Mandalay</td>
+                <td>35</td>            
+                <td>2010/6/20</td>
+                <td>310,800</td>   
+            </tr>
+            <tr>
+                <td>Aung Aung</td>
+                <td>Javascript Developer</td>
+                <td>Nay Pyi Taw</td>
+                <td>22</td>
+                <td>2012/6/20</td>
+                <td>450,000</td>
+            </tr>
+            <tr>
+                <td>Jena</td>
+                <td>Sales Assistant</td>
+                <td>Tokyo</td>
+                <td>33</td>
+                <td>2012/6/20</td>
+                <td>230,400</td>
+            </tr>
+            <tr>
+                <td>Soeya</td>
+                <td>Software Engineer</td>
+                <td>Tokyo</td>
+                <td>36</td>
+                <td>2012/8/21</td>
+                <td>230,700</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

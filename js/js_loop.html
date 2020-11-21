@@ -1,0 +1,33 @@
+<h1>JS Loop</h1>
+<p>Hello 3 ခါထုတ္မယ္</p>
+<p>Fruit List</p>
+<ol>
+
+</ol>
+<script>
+    Let arr=["apple","orange","mango","banana"];//arr ka array datatype(0 khan ka sa)
+
+    for (let i = 0; i < array.length; i++) {
+        document.querySelector("ol").innerHTML+=`<li>${arr[i]}</li>`;  //(+= ka shi tr apyin htet + chin loh),//(ol ka order list nae por chin loh)      
+    }
+
+    for(x in arr){//for in loop(x ka bl ka start p bl mhrr end ml so tr auto thi tl)
+        document.querySelector("ol").innerHTML+=`<li>${arr[x]}</li>`;      
+    }
+
+    for (x of arr) {// for of loop(x ka arr htl ka room twy ko ko srr pyu)
+        document.querySelector("ol").innerHTML+=`<li>${arr[x]}</li>`;      
+
+    }
+
+        //start; //end;  //++,--(condition 3 khu)
+    for(i=1; i<=10; i++){//for loop
+        console.log(`${i}hello`);
+    }
+
+
+    function showHello(max){ //for loop ko function htl htae
+     for(i=1; i<=10; i++){
+         console.log(`${i}hi`);
+    }
+</script>

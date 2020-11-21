@@ -1,0 +1,99 @@
+body{
+    font-family: Helvetica;
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 450px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px #000000, 0 6px 8px #000001;
+}
+.container .heading{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #1877f2;
+    cursor: pointer;
+}
+.container .loginForm .form p{
+    font-weight: 400;
+}
+.container .loginForm .form .formInput input{
+    width: 380px;
+    height: 45px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin: 5px 0;
+    font-size: 18px;
+    padding: 6px 15px;
+    outline: none;
+}
+.container .loginForm .form  .submit{
+    margin: 10px 0;
+}
+.container .loginForm .form .submit button{
+    color: #ffffff;
+    border: 1px solid #1877f2;
+    background-color: #1877f2;
+    border-radius: 6px;
+    width: 390px;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bolder;
+    font-size: 18px;
+
+}
+.container .loginForm .form .forget{
+    margin: 11px 0;
+
+}
+
+.container .loginForm .form .forget a{
+    font-weight: 500;
+    font-size: 14px;
+}
+.container .loginForm .form span{
+    font-size: 14px;
+}
+
+.container .loginForm .form .lines::before{
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 1px;
+    background-color: #333;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container .loginForm .form .lines::after{
+    position: absolute;
+    content: '';
+    width: 210px;
+    height: 1px;
+    background-color: #333;
+    margin-top: 15px;
+    margin-left: -230px;
+}
+
+.container .loginForm .form .register{
+    margin: 20px 0;
+}
+.container .loginForm .form .register button{
+    color: #fff;
+    border: 1px solid #42b72a;
+    background-color: #42b72a;
+    border-radius: 6px;
+    width: 390px;
+    height: 55px;
+    cursor: pointer;
+    outline: none;
+    font-size: 18px;
+    font-weight: bolder;
+}

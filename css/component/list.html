@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Design & Menu</title>
+    <style type="text/css">
+        body{
+            background-color:dodgerblue;
+        }
+        .text-list{
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .text-list li{
+            background: #ffffff;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-family:cursive;
+            width:150px;
+            border-left: 5px solid rgb(88, 170, 252);
+            color: dodgerblue;
+            transition: 1s;
+            border-radius:0 5px 5px 0;
+
+        }
+        .text-list li:hover{
+            border-left-width:10px;
+            /* background-color:#eaeaea; */
+            font-weight: bolder;
+            
+        }
+        .box{
+            width: 200px;
+            border: 2px solid #fff;
+            padding: 10px;
+            border-radius:0 5px 5px 0;
+        }
+        .box-title{
+            text-transform:uppercase;
+            font-family:cursive;
+            color: dodgerblue;
+            border: 2px solid #fff;
+            padding: 10px;
+            background-color:#fff;
+            border-radius: 5px;
+        }
+        .nav-bar{
+            list-style-type: none;
+            padding: 10px;
+            background-color: #fff;
+
+        }
+        .nav-item{
+            display: inline-block;
+            padding: 10px 15px;
+            font-family: cursive;
+            text-transform: uppercase;
+            color: dodgerblue;
+        }
+        .nav-item:hover{
+            background-color:dodgerblue ;
+            color: #fff;
+            transition: 0.5s;
+        }
+        .nav-item.active{
+            background-color:dodgerblue ;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="box">
+        <legend class="box-title">My Test List</legend>
+            <ul class="text-list">
+                <li>News</li>
+                <li>About</li>
+                <li>Contact Us</li>
+                <li>Home</li>
+                <li>Our Service</li>
+        
+            </ul>
+    </fieldset>
+
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-item active">News</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Contact Us</li>
+            <li class="nav-item">Home</li>
+            <li class="nav-item">Our Service</li>
+        </ul>
+    </nav>
+    
+</body>
+</html>

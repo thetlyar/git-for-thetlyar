@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Register</legend>
+        <form action="#" method="get">
+            <div>
+                <label>Your Name:</label>
+                <input type="text" name="fname" placeholder="First name" autofocus="">
+                <input type="text" name="lname" placeholder="Last name" autofocus="">
+            </div><br>
+            <div>
+                <label for="email"> Your Email:</label>
+                <input type="email" name="Email" id="email">
+            </div><br>
+            <div>
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="password">
+                <input type="password" name="confirmpassword" placeholder="confirm password">
+            </div><br>
+            <div>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="50" rows="5"></textarea>
+            </div><br>
+            <div>
+                <label for="profile">Your Photo:</label>
+                <input type="file" name="photo" id="profile">
+            </div><br>
+            <div>
+                <label for="bd">Date of Birth:</label>
+                <input type="date" name="bd" id="bd">
+            </div><br>
+            <input type="submit" value="Register">
+            <button type="button">Register</button>
+        </form>
+    </fieldset>
+</body>
+</html>

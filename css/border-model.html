@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Model</title>
+    <style type="text/css">
+        .one{
+            color: pink;
+            width: 500px;
+            padding: 20px;
+            margin: 20px;
+            border-width: 5px;
+            border-style: double;
+            border-color: gray;
+            border-radius: 50px;
+        }
+        .final{
+            border-bottom: 5px dashed rebeccapurple;
+            border-top: 5px solid rgb(5, 253, 253);
+            border-left: 5px solid green;
+            border-right: 5px solid blue;
+            color: blueviolet;
+            border-bottom-style: dotted;
+            padding: 50px;
+            margin: 50px 20px;
+            border-radius: 50%;
+
+        }
+        .img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .test{
+            background: gray;
+            height: 50%;
+        }
+        .parent-test{
+            border: 1px solid black;
+            height: 500px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent-test">
+    <div class="test"></div></div>
+    <h1 class="one">Hello! Welcome</h1>
+
+    <h1 class="one">Nice to meet you!</h1>
+
+    <h1 class="final">This is Final Test</h1>
+    <img src="assets/img1.jpg" class="img">
+
+</body>
+</html>
